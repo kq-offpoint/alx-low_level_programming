@@ -19,7 +19,7 @@ int main(void)
 				{
 					putchar(num1 + '0');
 					putchar(num2 + '0');
-					putchar(' ')
+					putchar(' ');
 					putchar(num3 + '0');
 					putchar(num4 + '0');
 					if (!(num1 == 9 && num2 == 8 && num3 == 9 && num4 == 9))
