@@ -1,37 +1,33 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints all possible combinations of two two-digit numbers
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int num1, num2, num3, num4;
+	int n1, n2;
 
-	for (num1 = 0; num1 <= 9; num1++)
+	for (n1 = 0; n1 < 100; n1++)
 	{
-		for (num2 = 0; num2 <= 9; num2++)
+		for (n2 = n1 + 1; n2 < 100; n2++)
 		{
-			for (num3 = num1; num3 <= 9; num3++)
+			putchar((n1 / 10) + '0');
+			putchar((n1 % 10) + '0');
+			putchar(' ');
+			putchar((n2 / 10) + '0');
+			putchar((n2 % 10) + '0');
+			if (n1 != 98 || n2 != 99)
 			{
-				for (num4 = num2 + 1; num4 <= 9; num4++)
-				{
-					putchar(num1 + '0');
-					putchar(num2 + '0');
-					putchar(' ');
-					putchar(num3 + '0');
-					putchar(num4 + '0');
-					if (!(num1 == 9 && num2 == 8 && num3 == 9 && num4 == 9))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
+
 	putchar('\n');
 
 	return (0);
 }
+
