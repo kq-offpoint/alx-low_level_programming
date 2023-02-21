@@ -17,4 +17,6 @@ int print_sign(int n);
 
 int _abs(int);
 
+int print last digit(int);
+
 #endif /* MAIN_H */
