@@ -11,12 +11,12 @@
 
 void print_times_table(int n)
 {
-	int i, j res;
+	int i, j, res;
 
-	if (n > 15 || N < 0)
+	if (n > 15 || n < 0)
 		return;
 
-	for (int i = 0; i <= n i++)
+	for (int i = 0; i <= n; i++)
 	{
 		for (int j = 0; j <= n; j++)
 		{
@@ -27,6 +27,6 @@ void print_times_table(int n)
 			else
 				printf(", %d", res);
 		}
-		printf("\n")
+		printf("\n");
 	}
 }
