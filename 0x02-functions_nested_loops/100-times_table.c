@@ -8,28 +8,27 @@
  *
  * Return: void
  */
+
 void print_times_table(int n)
 {
-	int i, j, res;
+	if (n > 15 || N < 0)
+		return;
 
-	if (n >= 0 && n <= 15)
+	for (int i = 0; i <= n i++)
 	{
-		for (int i = 0; i <= n; i++)
+		for (int j = 0; j <= n; j++)
 		{
-			for (int j = 0; j <= n; j++)
-			{
-				int res = i * j;
+			int res = i * j;
 
-				if (j == 0)
-				{
-					printf("%d", res);
-				}
-				else
-				{
-					printf(",%3d", res);
-				}
-			}
-			printf("\n");
+			if (j == 0)
+				printf("%d", res);
+			else if (res < 10)
+				printf(", %d", res);
+			else if (res < 100)
+				printf(", %d", res);
+			else
+				printf(", %d", res);
 		}
+		printf("\n")
 	}
 }
