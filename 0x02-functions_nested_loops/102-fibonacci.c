@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i;
-	long fib1 = 1, fib2 = 2 next;
+	long fib1 = 1, fib2 = 2, next;
 
 	printf("%1d, %1d", fib1, fib2);
 
@@ -20,6 +20,7 @@ int main(void)
 		fib1 = fib2;
 		fib2 = next;
 	}
+
 	printf("\n");
 
 	return (0);
