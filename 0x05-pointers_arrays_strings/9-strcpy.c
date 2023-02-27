@@ -1,23 +1,17 @@
 #include "main.h"
 
 /**
- * _strcpy - has two arguments
- * @dest: first argument
- * @src: second argument
- * Return: nothing
+ * puts2 - prints every other character of a string
+ * @str: the string to print
  */
-
-char *_strcpy(char *dest, char *src)
+void puts2(char *str)
 {
-	int i;
+    int i;
 
-	for (i = 0; src[i] != '\0'; i++)
-	{
-		dest[i] = src[i];
-	}
+    for (i = 0; str[i] != '\0'; i += 2)
+    {
+        _putchar(str[i]);
+    }
 
-	dest[i] = '\0';
-
-	return (dest);
+    _putchar('\n');
 }
-
