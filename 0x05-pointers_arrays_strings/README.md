@@ -1,2 +1,1 @@
-README file into C - pointer, arrays and strings
-LET'S GO !
+hard things are worth it
