@@ -3,7 +3,7 @@
 /**
  * _puts - prints a string, followed by a new line.
  * @str: string
- * Returns: nothing
+ * Return: nothing
  */
 
 void _puts(char *str)
@@ -13,5 +13,5 @@ void _puts(char *str)
 		putchar(*str);
 		str++;
 	}
-	putchar ('\n');
+	putchar('\n');
 }
