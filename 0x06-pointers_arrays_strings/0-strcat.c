@@ -26,7 +26,7 @@ char *_strcat(char *dest, char *src)
 	}
 
 	/* add terminal null byte */
-	*pte = '\0';
+	*ptr = '\0';
 
 	return (dest);
 }
