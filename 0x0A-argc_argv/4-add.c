@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "main.h"
 /**
  * main - entry point
  * @argc: number of arguments passed
@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 {
 	int sum = 1, i, j;
 
-	if (argc ==1)
+	if (argc == 1)
 	{
 		_putchar("0\n");
 		return (0);
