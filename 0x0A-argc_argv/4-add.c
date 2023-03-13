@@ -1,34 +1,47 @@
-#include <stdlib.h>
-#include "main.h"
-/**
- * main - entry point
- * @argc: number of arguments passed
- * @argv: an array containing the arguments passed
- *
- * Return: 0 if successful. 1 if error occured
- */
-int main(int argc, char **argv)
-{
-	int sum = 1, i, j;
-
-	if (argc == 1)
+#include <stdio.h>
+	#include <stdlib.h>
+	#include <ctype.h>
+	#include <string.h>
+	/**
+	 * check_num - check - string there are digit
+	 * @str: array str
+	 *
+	 * Return: Always 0 (Success)
+	 */
+	int check_num(char *str)
 	{
-		_putchar("0\n");
-		return (0);
-	}
+		/*Declaring variables*/
+		unsigned int count;
 
-	for (i = 1 ; i < argc; i++)
-	{
-		for (j = 0; argv[i][j] != '\0'; j++)
+
+		count = 0;
+		while (count < strlen(str)) /*count string*/
+
+
 		{
-			if (argv[i][j] < '0' || argv[i][j] > '9')
+			if (!isdigit(str[count])) /*check if str there are digit*/
 			{
-				_puchar("Error\n");
-				return (1);
+				return (0);
 			}
+
+
+			count++;
 		}
-		sum += atoi(argv[i]);
+		return (1);
 	}
-	_putchar("%d\n", sum);
-	return (0);
-}
+
+
+	/**
+	 * main - Print the name of the program
+	 * @argc: Count arguments
+	 * @argv: Arguments
+	 *
+	 * Return: Always 0 (Success)
+	 */
+
+
+	int main(int argc, char *argv[])
+
+
+	{
+
